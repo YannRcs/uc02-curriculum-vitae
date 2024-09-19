@@ -98,21 +98,21 @@ body {
 
     #experiencias {
         margin-top: 10px;
-        background-color: aqua;
+        /* background-color: aqua; */
 
     }
 
     #educacao {
         margin-top: 10px;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
 
     }
 
     #interesses {
-        background-color: cadetblue;
+        /* background-color: cadetblue; */
 
     }
 
     #linguas {
-        background-color: tomato;
+        /* background-color: tomato; */
     }
