@@ -29,7 +29,7 @@ body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     height: auto;
     /* unidade de medida vh - view height */
-    background: grey;
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,82 +37,103 @@ body {
     margin: auto;
 }
 
+#header {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    width: 1000px;
+    height: 300px;
+    /* background-color: aquamarine; */
+    background-color: #f5a93f;
+
+}
+
+.container {
+    max-width: 1000px;
+    background-color: #fde9cf;
+    padding: 0 100px;
+
+
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+#foto-perfil img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+
+}
+
+#nome h1 {
+    font: bold;
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+#nome h2 {
+    font-size: 20px;
+    margin-top: 19px;
+}
+
+#contatos {
+    font-size: 20px;
+    margin: 0 10px 0px 10px;
+    margin-top: 69px;
+    text-align: end;
+}
+
+#sobre-mim {
+    margin-top: 10px;
+    /* background-color: brown; */
+
+
+}
+
+#sobre-mim h1 {
+    font-size: 50px;
+}
+
+#sobre-mim p {
+    font-size: 15px;
+}
+
+#experiencias {
+    margin-top: 10px;
+    /* background-color: aqua; */
+
+}
+
+#educacao {
+    margin-top: 10px;
+    /* background-color: blueviolet; */
+
+}
+
+.titulos {
+
+    font-size: 30px;
+    text-align: left;
+}
+
+@media (max-width:600px) {
     #header {
-        display: flex;
-        padding: 10px;
-        gap: 15px;
-        width: 1000px;
-        height: 300px;
-        background-color: aquamarine;
-
+        flex-direction: column;
+        align-items: center;
     }
+}
 
-    .container {
-        max-width: 1000px;
-        background-color: bisque;
-        padding: 0 100px;
-
-
-    }
-
-    .column {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    
-    }
-
+@media(max-width:400) {
     #foto-perfil img {
-        width: 250px;
-        height: 250px;
-        border-radius:100%;
+        max-width: 200px;
     }
 
-    #nome h1 {
-        font: bold;
-        font-size: 50px;
-        margin-top: 35px;
+    #body {
+        padding: 0 20px;
     }
-
-    #nome h2 {
-        font-size: 30px;
-        margin-top: 55px;
-    }
-
-    #contatos {
-        font-size: 20px;
-        margin: 0 10px 0px 10px;
-        margin-top:100px;
-    }
-
-    #sobre-mim {
-        margin-top: 10px;
-        /* background-color: brown; */
-
-
-    }
-
-    #sobre-mim p{
-        font-size: 15px;
-    }
-
-    #experiencias {
-        margin-top: 10px;
-        /* background-color: aqua; */
-
-    }
-
-    #educacao {
-        margin-top: 10px;
-        /* background-color: blueviolet; */
-
-    }
-
-    #interesses {
-        /* background-color: cadetblue; */
-
-    }
-
-    #linguas {
-        /* background-color: tomato; */
-    }
+}
