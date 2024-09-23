@@ -48,7 +48,7 @@ body {
 
 }
 
-.container {
+#container {
     max-width: 1000px;
     background-color: #fde9cf;
     padding: 0 100px;
