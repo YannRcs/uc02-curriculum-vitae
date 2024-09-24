@@ -59,7 +59,8 @@ body {
 .column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
+    text-align: justify;
 
 }
 
@@ -90,6 +91,7 @@ body {
 
 #sobre-mim {
     margin-top: 10px;
+    text-align: justify;
     /* background-color: brown; */
 
 
